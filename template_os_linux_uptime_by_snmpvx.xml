@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2020-09-07T10:04:09Z</date>
+    <groups>
+        <group>
+            <name>Linux servers</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template OS Linux uptime by SNMPvX</template>
+            <name>Template OS Linux uptime by SNMPvX</name>
+            <description>This template is created to monitor Linux host uptime from Zabbix 5.0 with SNMP. In Zabbix 5.0 we can use SNMP versions on a host level and thus this template is suited for all SNMP versions.&#13;
+&#13;
+We've created this template as an example in our book and it is not suited for sharing or active monitoring.</description>
+            <groups>
+                <group>
+                    <name>Linux servers</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <name>System Uptime</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.2.1.25.1.1.0</snmp_oid>
+                    <key>sys.Uptime</key>
+                    <units>uptime</units>
+                </item>
+            </items>
+        </template>
+    </templates>
+    <graphs>
+        <graph>
+            <name>System Uptime</name>
+            <graph_items>
+                <graph_item>
+                    <color>1A7C11</color>
+                    <item>
+                        <host>Template OS Linux uptime by SNMPvX</host>
+                        <key>sys.Uptime</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>
