@@ -23,30 +23,11 @@ def get_api_token(url):
 
     return out['result']
 
-#Retrieve our host ID, hostname and interfaces of all our Zabbix hosts
+#Add new code below here
 
-def get_hosts(api_token, url):
 
-    payload = {
-    "jsonrpc": "2.0",
-    "method": "host.get",
-    "params": {
-        "output": [
-            "hostid",
-            "host"
-        ],
-        "selectInterfaces": [
-            "interfaceid",
-            "ip",
-            "main"
-        ]
-    },
-    "id": 2,
-    "auth": api_token
-    }
 
-    resp = requests.post(url=url, json=payload )
-    out = resp.json()
+#Add new code above here
 
 
 #API token request
