@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>5.2</version>
-    <date>2020-12-18T10:38:29Z</date>
+    <version>5.0</version>
+    <date>2020-12-22T10:13:34Z</date>
     <groups>
         <group>
             <name>AWS</name>
@@ -9,8 +9,8 @@
     </groups>
     <hosts>
         <host>
-            <host>Bucket_discovery</host>
-            <name>Bucket_discovery</name>
+            <host>AWS Bucket discovery</host>
+            <name>AWS Bucket discovery</name>
             <groups>
                 <group>
                     <name>AWS</name>
@@ -23,7 +23,7 @@
             </interfaces>
             <discovery_rules>
                 <discovery_rule>
-                    <name>bucket discovery</name>
+                    <name>Bucket discovery</name>
                     <key>bucket.discovery</key>
                     <delay>1d</delay>
                     <interface_ref>if1</interface_ref>
@@ -33,7 +33,7 @@
                             <type>DEPENDENT</type>
                             <key>bucket.contents[{#NAME}]</key>
                             <delay>0</delay>
-                            <units>entities</units>
+                            <units>!entities</units>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Bucket: {#NAME}</name>
@@ -42,9 +42,7 @@
                             <preprocessing>
                                 <step>
                                     <type>JSONPATH</type>
-                                    <parameters>
-                                        <parameter>$.[1]</parameter>
-                                    </parameters>
+                                    <params>$.[1]</params>
                                 </step>
                             </preprocessing>
                             <master_item>
@@ -79,9 +77,7 @@
                             <preprocessing>
                                 <step>
                                     <type>JSONPATH</type>
-                                    <parameters>
-                                        <parameter>$.[0]</parameter>
-                                    </parameters>
+                                    <params>$.[0]</params>
                                 </step>
                             </preprocessing>
                             <master_item>
@@ -97,11 +93,11 @@
                     </lld_macro_paths>
                 </discovery_rule>
             </discovery_rules>
-            <inventory_mode>DISABLED</inventory_mode>
+            <inventory_mode>AUTOMATIC</inventory_mode>
         </host>
         <host>
-            <host>RDS discovery</host>
-            <name>RDS discovery</name>
+            <host>AWS RDS discovery</host>
+            <name>AWS RDS discovery</name>
             <groups>
                 <group>
                     <name>AWS</name>
@@ -122,7 +118,7 @@
                         <host_prototype>
                             <host>{#NAME}</host>
                             <name>{#NAME}</name>
-                            <inventory_mode>DISABLED</inventory_mode>
+                            <inventory_mode>AUTOMATIC</inventory_mode>
                             <group_links>
                                 <group_link>
                                     <group>
@@ -132,7 +128,7 @@
                             </group_links>
                             <templates>
                                 <template>
-                                    <name>aws_rds</name>
+                                    <name>Template AWS RDS discovery</name>
                                 </template>
                             </templates>
                         </host_prototype>
@@ -145,7 +141,7 @@
                     </lld_macro_paths>
                 </discovery_rule>
             </discovery_rules>
-            <inventory_mode>DISABLED</inventory_mode>
+            <inventory_mode>AUTOMATIC</inventory_mode>
         </host>
     </hosts>
 </zabbix_export>

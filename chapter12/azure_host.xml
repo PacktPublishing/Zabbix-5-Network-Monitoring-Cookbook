@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>5.2</version>
-    <date>2020-12-18T10:52:25Z</date>
+    <version>5.0</version>
+    <date>2020-12-22T10:13:53Z</date>
     <groups>
         <group>
             <name>Azure</name>
@@ -9,8 +9,8 @@
     </groups>
     <hosts>
         <host>
-            <host>discover DBs</host>
-            <name>discover DBs</name>
+            <host>Discover Azure DBs</host>
+            <name>Discover Azure DBs</name>
             <groups>
                 <group>
                     <name>Azure</name>
@@ -23,7 +23,7 @@
             </interfaces>
             <discovery_rules>
                 <discovery_rule>
-                    <name>Discover DB instances</name>
+                    <name>Discover Azure DBs</name>
                     <key>azure.db.discovery</key>
                     <delay>1d</delay>
                     <filter>
@@ -41,7 +41,7 @@
                         <host_prototype>
                             <host>{#NAME}</host>
                             <name>{#NAME}</name>
-                            <inventory_mode>DISABLED</inventory_mode>
+                            <inventory_mode>AUTOMATIC</inventory_mode>
                             <group_links>
                                 <group_link>
                                     <group>
@@ -51,7 +51,7 @@
                             </group_links>
                             <templates>
                                 <template>
-                                    <name>Azure_DB_Metrics</name>
+                                    <name>Template Azure DB</name>
                                 </template>
                             </templates>
                             <macros>
@@ -74,7 +74,7 @@
                     </lld_macro_paths>
                 </discovery_rule>
             </discovery_rules>
-            <inventory_mode>DISABLED</inventory_mode>
+            <inventory_mode>AUTOMATIC</inventory_mode>
         </host>
     </hosts>
 </zabbix_export>
