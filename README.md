@@ -32,8 +32,7 @@ The code will look like the following:
 # MariaDB Server
 # To use a different major version of the server, or to pin to
 a specific minor version, change URI below.
-deb [arch=amd64] http://downloads.mariadb.com/MariaDB/
-mariadb-10.5/repo/ubuntu xenial main
+deb [arch=amd64] http://downloads.mariadb.com/MariaDB/mariadb-10.5/repo/ubuntu xenial main
 ```
 
 **Following is what you need for this book:**
