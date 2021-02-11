@@ -4,7 +4,7 @@
 
 This is the code repository for [Zabbix 5 IT Infrastructure Monitoring Cookbook](https://www.packtpub.com/product/zabbix-5-it-infrastructure-monitoring-cookbook/9781800202238?utm_source=github&utm_medium=repository&utm_campaign=9781800202238), published by Packt.
 
-**Explore the new features of Zabbix 5 for designing, building, and maintaining your Zabbix setup**
+**Zabbix 5 Network Monitoring Cookbook, Published by Packt**
 
 ## What is this book about?
 Zabbix offers useful insights into your infrastructure performance and issues and enables you to enhance your monitoring setup with its variety of powerful features. This book covers hands-on, easy-to-follow recipes for using Zabbix 5 for effectively monitoring the performance of devices and applications over networks. 
