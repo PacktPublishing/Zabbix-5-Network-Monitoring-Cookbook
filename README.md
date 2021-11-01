@@ -53,7 +53,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 ## Errata
 
-* Page 25 (Paragraph 3, line 3): **`dpkg -i zabbix-release_4.5-1+focal_all.deb`** _should be_ **`dpkg -i zabbix-release_5.0-1+focal_all.deb`**
+* Page 25 (Paragraph 3, line 8): **`dpkg -i zabbix-release_4.5-1+focal_all.deb`** _should be_ **`dpkg -i zabbix-release_5.0-1+focal_all.deb`**
 
 
 ### Related products
