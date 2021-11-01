@@ -50,12 +50,11 @@ With the following software and hardware list you can run all code files present
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](http://www.packtpub.com/sites/default/files/downloads/9781800202238_ColorImages.pdf).
 
-<!--
+
 ## Errata
--->
-<!--
+
 * Page 25 (Paragraph 3, line 3): **`dpkg -i zabbix-release_4.5-1+focal_all.deb`** _should be_ **`dpkg -i zabbix-release_5.0-1+focal_all.deb`**
--->
+
 
 ### Related products
 * Mastering Palo Alto Networks [[Packt]](https://www.packtpub.com/product/mastering-palo-alto-networks/9781789956375?utm_source=github&utm_medium=repository&utm_campaign=9781789956375) [[Amazon]](https://www.amazon.com/dp/1789956374)
